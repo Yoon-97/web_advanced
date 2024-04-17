@@ -1,24 +1,22 @@
-/* ID 선택자 */
-#title {
-  text-decoration: underline;
-  font-weight: bold;
+#main-margin {
+  padding-left: 160px;
+  padding-right: 160px;
 }
-/* 클래스 선택자 */
-.description {
-  color: grey;
+
+.nav-items div {
+  display: inline-block;
 }
-/* 태그 선택자 */
-p {
-  font-style: italic;
-  color: white;
-  background-color: skyblue;
-  width: 200px;
-  height: 30px;
-  padding: 20px;
-  border: 50px black;
-  margin: 15px;
+
+.header_footer-box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 18px;
+  margin-left: 18px;
 }
-/* 자식 선택자 */
-div p {
-  color: blue;
+
+.header_footer-icon {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
