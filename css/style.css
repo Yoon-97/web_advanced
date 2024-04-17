@@ -50,7 +50,6 @@
 
 .flex-item {
   flex: 1;
-  flex-wrap: wrap;
 }
 #profile-image {
   width: 50%;
@@ -67,4 +66,7 @@
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
+}
+
+.section-text {
 }
