@@ -10,6 +10,13 @@
 /* 태그 선택자 */
 p {
   font-style: italic;
+  color: white;
+  background-color: skyblue;
+  width: 200px;
+  height: 30px;
+  padding: 20px;
+  border: 50px black;
+  margin: 15px;
 }
 /* 자식 선택자 */
 div p {
