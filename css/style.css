@@ -20,3 +20,11 @@
   margin-right: 10px;
   margin-left: 10px;
 }
+
+#pr-ment {
+  font-size: 50px;
+}
+.float-clear {
+  clear: left;
+  clear: right;
+}

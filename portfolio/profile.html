@@ -7,23 +7,18 @@
     <title>Document</title>
   </head>
   <header>
-    <div class="header">
-      <nav class="headerbox">
-        <div class="nav-items">
-          <span style="text-align: left;">
-              <img src="./img/007_header.svg" width="10%" style="margin-right: ;" />
+    <div>
+      <nav>
+        <div>
+          <span>
+              <img src="./img/007_header.svg" width="10%"/>
           </span>
-          <span style="float: right;">
+          <span>
           <span class="header_footer-box"><a href="#">Home</a></span>
-
           <span class="header_footer-box"><a href="#">About  </a></span>
-
           <span class="header_footer-box"><a href="#">Tech Stack  </a></span>
-
           <span class="header_footer-box"><a href="#">Projects  </a></span>
-
           <span class="header_footer-box">Contact</span>
-          
           <span class="header_footer-icon">
             <a href="#"><img src="./img/github_header.svg"/></a>
           </span>
@@ -41,22 +36,25 @@
     </div>
   </header>
 
+  <br/><br/>
+
+
 <body>
         <section>
-            <div>
-              <br/><br/>
-                <span style="float: left;">
-                    <h1>HI 🖐️,<br/>
+            <div style="display: flex;">
+                <span>
+                    <h1 id="pr-ment">HI 🖐️,<br/>
                       My name is<br/>
                       Yoonchul
                     </h1>
                 </span>
-                 <span>
-                    <img src="./img/profile_img.svg" width="20%">
+                 <span style="align-items: flex-end;">
+                    <img src="./img/profile_img.svg" width="30%" >
                 </span>
             </div>
+          </section>
 
-            <section>
+            <section class="float-clear">
             <div style="text-align: center;">
                 <h2>My Tech Stack</h2>
                 <p >Technologies I've been studying with recently</p>
@@ -89,14 +87,143 @@
             
         </section>
   
-<body/>
+      </body>
+
+<section>
+        <div>
+          <h2>Projects</h2>
+          <p>Things I'v built so far</p>
+        </div>
+        <div>
+          <div
+            style="
+              width: 30%;
+              box-shadow: 0px 0px 20px #d9d9d9;
+              border-radius: 20px;
+              overflow: hidden;
+            "
+          >
+            <img
+              width="100%"
+              height="240px"
+              src="img/vscode-icons_file-type-vscode.svg"
+            />
+            <h3>Project Tile goes here</h3>
+            <p style="text-align: left">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </p>
+            <p>Tech stack : HTML , JavaScript, SASS, React</p>
+            <p>
+              <a href="#" style="color: black">
+                <img
+                  src="img/akar-icons_github-fill.svg"
+                  alt="링크"
+                  width="20"
+                />
+                Live Preview
+              </a>
+              <a href="#" style="color: black">
+                <img
+                  src="img/akar-icons_github-fill.svg"
+                  alt="링크"
+                  width="20"
+                />
+                View Code
+              </a>
+            </p>
+          </div>
+          <div
+            style="
+              width: 30%;
+              box-shadow: 0px 0px 20px #d9d9d9;
+              border-radius: 20px;
+              overflow: hidden;
+            "
+          >
+            <img
+              width="100%"
+              height="240px"
+              src="https://source.unsplash.com/random/?programming"
+              alt="랜덤이미지"
+            />
+            <h3>Project Tile goes here</h3>
+            <p style="text-align: left">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </p>
+            <p>Tech stack : HTML , JavaScript, SASS, React</p>
+            <p>
+              <a href="#" style="color: black">
+                <img
+                  src="img/akar-icons_github-fill.svg"
+                  alt="링크"
+                  width="20"
+                />
+                Live Preview
+              </a>
+              <a href="#" style="color: black">
+                <img
+                  src="img/akar-icons_github-fill.svg"
+                  alt="링크"
+                  width="20"
+                />
+                View Code
+              </a>
+            </p>
+          </div>
+          <div
+            style="
+              width: 30%;
+              box-shadow: 0px 0px 20px #d9d9d9;
+              border-radius: 20px;
+              overflow: hidden;
+            "
+          >
+            <img
+              width="100%"
+              height="240px"
+              src="https://source.unsplash.com/random/?programming"
+              alt="랜덤이미지"
+            />
+            <h3>Project Tile goes here</h3>
+            <p style="text-align: left">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </p>
+            <p>Tech stack : HTML , JavaScript, SASS, React</p>
+            <p>
+              <a href="#" style="color: black">
+                <img
+                  src="img/akar-icons_github-fill.svg"
+                  alt="링크"
+                  width="20"
+                />
+                Live Preview
+              </a>
+              <a href="#" style="color: black">
+                <img
+                  src="img/akar-icons_github-fill.svg"
+                  alt="링크"
+                  width="20"
+                />
+                View Code
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
 
   <footer>
     <span style="text-align: left;">
       <img src="./img/007_header.svg" width="10%" />
     </span>
 
-    <spans style="float: right;"> 
+    <spans> 
       <span><a href="">+82-010-1234-5678</a></span>
       <span>&nbsp&nbsp</span>
 
@@ -124,7 +251,7 @@
           <span><a href="#">Projects  </a></span>
           <span>&nbsp&nbsp</span>
           <span>Contact</span><span>&nbsp&nbsp</span>
-    <span style="float: right;">Designed and built by pavanMG with Love & Coffee</span>
+    <span>Designed and built by pavanMG with Love & Coffee</span>
     </div>
     
   </footer>
