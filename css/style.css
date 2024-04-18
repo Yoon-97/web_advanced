@@ -10,7 +10,7 @@
 }
 #flex-container-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 110%;
 }
 .nav-items div {
@@ -44,6 +44,10 @@
   clear: right;
 }
 .flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-flex-container {
   display: flex;
   justify-content: space-between;
 }
