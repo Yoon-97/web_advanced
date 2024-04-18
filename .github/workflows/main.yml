@@ -22,4 +22,4 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            ./ s3://pd-profile-mybucket
+            ./profile/ s3://pd-profile-mybucket
