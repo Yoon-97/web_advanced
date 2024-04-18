@@ -1,17 +1,18 @@
 <!doctype html>
 <html id="main-margin" lang="en">
   <head>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="remove css" href="./css/remove.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <header>
+  <body>
     <div>
       <nav>
-        <div>
+        <div class="flex-container">
           <span>
-            <img src="./img/007_header.svg" width="10%" />
+            <img src="./img/007_header.svg" width="90%" />
           </span>
           <span>
             <span class="header_footer-box"><a href="#">Home</a></span>
@@ -20,44 +21,45 @@
             <span class="header_footer-box"><a href="#">Projects </a></span>
             <span class="header_footer-box">Contact</span>
             <span class="header_footer-icon">
-              <a href="#"><img src="./img/github_header.svg" /></a>
+              <a href="#"><img src="./img/github_header.svg" alt="github" /></a>
             </span>
             <span class="header_footer-icon">
-              <a href="#"><img src="./img/twitter_header.svg" /></a>
+              <a href="#"
+                ><img src="./img/twitter_header.svg" alt="twitter"
+              /></a>
             </span>
             <span class="header_footer-icon">
-              <a href="#"><img src="./img/linkedin.svg" /></a>
+              <a href="#"><img src="./img/linkedin.svg" alt="linkedin" /></a>
             </span>
           </span>
         </div>
       </nav>
     </div>
-  </header>
 
-  <br /><br />
+    <br /><br />
 
-  <body>
-    <section>
+    <header>
       <div class="flex-container">
-        <div class="flex-item">
-          <h1 id="pr-ment">
+        <div>
+          <h1>
             HI 🖐️,<br />
-            My name is<br />
-            Yoonchul
+            My name is <br /><span>Yoonchul</span>
           </h1>
         </div>
-        <div class="flex-item">
-          <img src="./img/profile_img.svg" />
-        </div>
+        <img
+          id="profile-img"
+          src="./img/free-icon-turtle-6282795.png"
+          width="30%"
+        />
       </div>
-    </section>
+    </header>
 
-    <section class="float-clear">
+    <section>
       <div style="text-align: center">
-        <h2>My Tech Stack</h2>
+        <h2 style="font-size: 40px">My Tech Stack</h2>
         <p>Technologies I've been studying with recently</p>
       </div>
-      <article style="text-align: center">
+      <article style="text-align: center; margin-bottom: 100px">
         <div>
           <img src="./img/vscode-icons_file-type-html.svg" class="skills" />
           <img src="./img/vscode-icons_file-type-css.svg" class="skills" />
@@ -69,9 +71,12 @@
         </div>
 
         <div>
-          <img class="skills" src="./img/vscode-icons_file-type-tailwind.svg" />
+          <img class="skills" src="./img/spring.svg" />
           <img class="skills" src="./img/vscode-icons_file-type-vscode.svg" />
-          <img class="skills" src="./img/logos_bootstrap.svg" />
+          <img
+            class="skills"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+          />
           <img class="skills" src="./img/github.svg" />
         </div>
       </article>
@@ -84,30 +89,58 @@
       </div>
       <div id="flex-container-project">
         <div class="projects">
-          <img
-            width="100%"
-            height="240px"
-            src="img/vscode-icons_file-type-vscode.svg"
-          />
-          <h3>Project Tile goes here</h3>
-          <p style="text-align: center">
-            This is sample project description random things are here in
-            description This is sample project lorem ipsum generator for dummy
-            content
+          <img width="100%" height="240px" src="./img/serviceLogo.svg" />
+          <h3>실시간 재난 알림 서비스 "삐용삐용"</h3>
+          <p style="text-align: center; padding: 10px">
+            서울시의 여러 사건, 사고들을 실시간으로 볼 수 있는 웹 서비스 입니다.
+            지도의 지역을 클릭하여 실시간 교통 현황, 재난문자 또한 볼 수
+            있습니다. 알림이 많은 지역일수록 색이 진해지며 로그인 시 원하는
+            종류의 사건 발생 시, 알림수신이 가능합니다.
           </p>
           <p>Tech stack : HTML , JavaScript, SASS, React</p>
           <p>
-            <a href="#" style="color: black">
+            <a href="https://github.com/bbiyongbbiyong" style="color: black">
               <img src="img/akar-icons_github-fill.svg" alt="링크" width="20" />
               Live Preview
             </a>
-            <a href="#" style="color: black">
+            <a
+              href="https://github.com/orgs/bbiyongbbiyong/repositories"
+              style="color: black"
+            >
               <img src="img/akar-icons_github-fill.svg" alt="링크" width="20" />
               View Code
             </a>
           </p>
         </div>
 
+        <div class="projects">
+          <img
+            width="100%"
+            height="240px"
+            src="./img/ihangbot.png"
+            alt="랜덤이미지"
+          />
+          <h3>AI 활용 유아 전용 챗봇 "아이행봇해"</h3>
+          <p style="text-align: center">
+            AI를 활용한 유아 전용 챗봇입니다. STT-TTS 전환을 사용하여 상호
+            대화를 진행하며 대화 데이터는 문장분석 알고리즘을 통해 감정 분석 및
+            관심사 분석 레포트를 생성하는데 이용됩니다.<br /><br /><br /><br />
+          </p>
+          <p>Tech stack : Java , JavaScript, Python, React</p>
+          <p>
+            <a href="https://github.com/iHangbot" style="color: black">
+              <img src="img/akar-icons_github-fill.svg" alt="링크" width="20" />
+              Live Preview
+            </a>
+            <a
+              href="https://github.com/orgs/iHangbot/repositories"
+              style="color: black"
+            >
+              <img src="img/akar-icons_github-fill.svg" alt="링크" width="20" />
+              View Code
+            </a>
+          </p>
+        </div>
         <div class="projects">
           <img
             width="100%"
@@ -119,39 +152,7 @@
           <p style="text-align: center">
             This is sample project description random things are here in
             description This is sample project lorem ipsum generator for dummy
-            content
-          </p>
-          <p>Tech stack : HTML , JavaScript, SASS, React</p>
-          <p>
-            <a href="#" style="color: black">
-              <img src="img/akar-icons_github-fill.svg" alt="링크" width="20" />
-              Live Preview
-            </a>
-            <a href="#" style="color: black">
-              <img src="img/akar-icons_github-fill.svg" alt="링크" width="20" />
-              View Code
-            </a>
-          </p>
-        </div>
-        <div
-          style="
-            width: 30%;
-            box-shadow: 0px 0px 20px #d9d9d9;
-            border-radius: 20px;
-            overflow: hidden;
-          "
-        >
-          <img
-            width="100%"
-            height="240px"
-            src="https://source.unsplash.com/random/?programming"
-            alt="랜덤이미지"
-          />
-          <h3>Project Tile goes here</h3>
-          <p style="text-align: center">
-            This is sample project description random things are here in
-            description This is sample project lorem ipsum generator for dummy
-            content
+            content<br /><br /><br /><br /><br /><br />
           </p>
           <p style="text-align: center">
             Tech stack : HTML , JavaScript, SASS, React
@@ -173,33 +174,31 @@
 
   <footer style="margin: 20px">
     <div class="flex-container">
-      <span style="text-align: left">
-        <img src="./img/007_header.svg" />
-      </span>
+      <img src="./img/007_header.svg" width="10%" />
       <div id="flex-container-footer">
-        <span><a href="">+82-010-1234-5678</a></span>
-
-        <span><a href="">abc@gmail.com</a></span>
-
-        <span>
-          <a href="#"><img src="./img/github_header.svg" width="30px" /></a>
-        </span>
-        <span>
-          <a href="#"><img src="./img/twitter_header.svg" width="30px" /></a>
-        </span>
-        <span>
-          <a href="#"><img src="./img/linkedin.svg" width="30px" /></a>
-        </span>
+        <div class="tel-flex-container">
+          <a class="footer-box" href="tel:+12345678">+82-010-1234-5678</a>
+          <a class="footer-box" href="">abc@gmail.com</a>
+          <div>
+            <a href="#"><img src="./img/github_header.svg" width="30px" /></a>
+            <a href="#"><img src="./img/twitter_header.svg" width="30px" /></a>
+            <a href="#"><img src="./img/linkedin.svg" width="30px" /></a>
+          </div>
+        </div>
       </div>
     </div>
     <hr />
-    <div style="padding: 50px">
-      <span class="footer-box"><a href="#">Home</a></span>
-      <span class="footer-box"><a href="#">About </a></span>
-      <span class="footer-box"><a href="#">Tech Stack </a></span>
-      <span class="footer-box"><a href="#">Projects </a></span>
-      <span class="footer-box">Contact</span>
-      <span>Designed and built by pavanMG with Love & Coffee</span>
+    <div class="footer-flex-container">
+      <div class="flex-container">
+        <span class="footer-box"><a href="#">Home</a></span>
+        <span class="footer-box"><a href="#">About </a></span>
+        <span class="footer-box"><a href="#">TechStack </a></span>
+        <span class="footer-box"><a href="#">Projects </a></span>
+        <span class="footer-box">Contact</span>
+      </div>
+      <div class="footer-box">
+        Designed and built by pavanMG with Love & Coffee
+      </div>
     </div>
   </footer>
 </html>
