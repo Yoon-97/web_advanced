@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 속성</title>
+    <link rel="stylesheet" href="./common.css" />
+    <style>
+      /* unvisited link */
+      a:link {
+        color: red;
+      }
+
+      /* visited link */
+      a:visited {
+        color: #00ff00;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: #ff00ff;
+      }
+
+      /* selected link */
+      a:active {
+        color: #0000ff;
+      }
+      input {
+        outline: none;
+      }
+
+      input::placeholder {
+        color: blue;
+        font-size: 20px;
+      }
+
+      input:focus {
+        content: "써다러오";
+        background-color: rgb(47, 69, 70);
+        border: green solid 2px;
+        color: yellow;
+      }
+
+      input:focus::placeholder {
+        color: white;
+      }
+      .day4::before {
+        content: "오늘은 ";
+        color: rgb(247, 40, 216);
+      }
+
+      .day5::after {
+        content: "이에요";
+        color: rgb(247, 40, 216);
+      }
+
+      .day:hover {
+        background-color: #555555;
+      }
+      .holiday:first-child {
+        color: red;
+      }
+
+      .holiday:first-letter {
+        font-size: 40px;
+      }
+
+      .please:first-line {
+        color: green;
+      }
+
+      .holiday:first-child::before {
+        content: "✅";
+      }
+
+      .holiday:nth-child(3) {
+        content: "이에요";
+        color: rgb(0, 162, 255);
+      }
+
+      .holiday:last-child {
+        content: "이에요";
+        color: red;
+      }
+
+      .holiday:last-child::after {
+        content: "이말이에요";
+        color: rgb(0, 162, 255);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>[링크 가상속성]</div>
+    <a href="https://comic.naver.com/index">즐거운 네이버 웹툰</a>
+
+    <br /><br />
+
+    <div>[input]</div>
+    <input type="text" placeholder="먹고 싶은 점심메뉴를 적어주세요." />
+
+    <div>[input]</div>
+    <input type="text" placeholder="먹고 싶은 점심메뉴를 적어주세요." />
+
+    <br /><br />
+    <div>[before/after]</div>
+    <div class="day day4">즐거운 목요일</div>
+    <div class="day day5">즐거운 금요일</div>
+
+
+    <div>[nth-child]</div>
+     <div>
+        <div class="holiday">5월은 빨간날이 많다</div>
+        <div class="holiday">5월 1일 </div>
+        <div class="holiday">5월 6일 </div>
+        <div class="holiday">5월 15일 </div>
+        <div class="holiday">5월 15일 </div>
+        <div class="holiday">더 많았으면 좋겠다.</div>
+        <div class="please">쉬는 날은 좋은 게 더 많다 우리는 주4일제로 나아가야한다. 라고 생각한다고. 말하고 싶다.
+    
+    </div>
+
+
+  </body>
+</html>
