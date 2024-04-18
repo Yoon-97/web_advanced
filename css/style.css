@@ -51,6 +51,11 @@
   display: flex;
   justify-content: space-between;
 }
+.tel-flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
 
 .flex-item {
   flex: 1;
