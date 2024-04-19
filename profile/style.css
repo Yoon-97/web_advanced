@@ -76,15 +76,10 @@
   overflow: hidden;
   text-align: center;
 }
-
-/* header {
+header {
   padding-top: 50px;
   padding-bottom: 50px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+}
 
 header h1 {
   color: #42446e;
