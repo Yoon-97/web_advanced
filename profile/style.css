@@ -1,15 +1,21 @@
 @font-face {
-  font-family: "Pretendard";
-  src:
-    local("Pretendard Bold"),
-    url(./woff2/Pretendard-Bold.woff2) format("woff2"),
-    url(./woff/Pretendard-Bold.woff) format("woff");
-  font-weight: 700;
-  font-display: swap;
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
-* {
-  font-family: Pretendard !important;
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
+body {
+  font-family: "DungGeunMo";
+}
+
 #main-margin {
   padding-left: 8.33vw;
   padding-right: 8.33vw;
@@ -19,6 +25,15 @@
   margin-bottom: 2.6vw;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  #flex-container-project {
+    margin-top: 2.6vw;
+    margin-bottom: 2.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #flex-container-footer {
   display: flex;
@@ -47,6 +62,11 @@
   margin-right: 0.52vw;
   margin-left: 0.52vw;
 }
+@media (max-width: 768px) {
+  .header_footer-icon {
+    display: none;
+  }
+}
 
 #pr-ment {
   font-size: 2.6vw;
@@ -68,6 +88,19 @@
   justify-content: space-between;
   width: 60%;
 }
+@media (max-width: 768px) {
+  .tel-flex-container {
+    display: none;
+  }
+}
+remove-it {
+  display: "";
+}
+@media (max-width: 768px) {
+  .remove-it {
+    display: none;
+  }
+}
 
 .flex-item {
   flex: 1;
@@ -82,12 +115,32 @@
 }
 
 .projects {
+  font-family: Pretendard-Regular !important;
   width: 30%;
   box-shadow: 0.05vw 0.05vw 1.04vw #d9d9d9;
   border-radius: 1.04vw;
   overflow: hidden;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+  .projects {
+    font-family: Pretendard-Regular !important;
+    width: 80%;
+    box-shadow: 0.05vw 0.05vw 1.04vw #d9d9d9;
+    border-radius: 1.04vw;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 header {
   padding-top: 2.6vw;
   padding-bottom: 2.6vw;
@@ -95,10 +148,10 @@ header {
 
 header h1 {
   color: #42446e;
-  font-size: 3.02vw;
+  font-size: 6.5vw;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.65vw; /* 120.69% */
+  line-height: 6.65vw; /* 120.69% */
   letter-spacing: -0.05vw;
 }
 header h1 span {
