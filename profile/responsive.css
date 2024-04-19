@@ -1,18 +1,52 @@
-/* 모바일 기기를 위한 스타일 */
-body {
-  background-color: lightblue;
-}
-
-/* 화면 크기가 600px 이상일 때 적용되는 스타일 */
-@media (min-width: 600px) {
+/* 미디어 쿼리를 사용하여 모바일 크기로 웹 페이지가 작동할 때 스타일을 지정합니다. */
+@media only screen and (max-width: 600px) {
+  /* 전체 페이지 스타일 */
   body {
-    background-color: orange;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-}
 
-/* 화면 크기가 800px 이상일 때 적용되는 스타일 */
-@media (min-width: 800px) {
-  body {
-    background-color: green;
+  /* 네비게이션 스타일 */
+  nav {
+    padding: 10px;
+  }
+
+  .header_footer-box {
+    margin: 5px;
+  }
+
+  .header_footer-icon {
+    margin: 5px;
+  }
+
+  /* 헤더 스타일 */
+  header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  /* 섹션 스타일 */
+  section {
+    padding: 10px;
+  }
+
+  /* 프로젝트 스타일 */
+  #flex-container-project {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .projects {
+    width: 100%;
+  }
+
+  /* 푸터 스타일 */
+  footer {
+    padding: 10px;
   }
 }
